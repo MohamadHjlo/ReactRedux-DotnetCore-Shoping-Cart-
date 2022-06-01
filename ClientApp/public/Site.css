@@ -1,0 +1,38 @@
+:root {
+  --bs-light-red: #ff5858;
+}
+.btn:hover {
+  box-shadow: none !important;
+}
+.bg-teal {
+  background: var(--bs-teal) !important;
+  color: var(--bs-gray-100) !important;
+}
+.bg-indigo {
+  background: var(--bs-indigo) !important;
+  color: var(--bs-gray-100) !important;
+}
+.bg-danger {
+  background: var(--bs-danger) !important;
+  color: var(--bs-gray-100) !important;
+}
+.bg-light-danger {
+  background: var(--bs-light-red) !important;
+  color: var(--bs-gray-100) !important;
+}
+.border-light-green {
+  border: 1px solid #1ad992 !important;
+}
+.pro-todo-shadow {
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+.ml-1 {
+  margin-left: 0.4rem;
+}
+.ml-3 {
+  margin-left: 0.7rem;
+}
+.ml-5 {
+  margin-left: 1rem;
+}
