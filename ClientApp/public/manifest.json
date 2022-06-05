@@ -1,6 +1,6 @@
 {
-  "short_name": "SpaReactDotNet",
-  "name": "SpaReactDotNet",
+  "short_name": "SpaReduxDotNet",
+  "name": "SpaReduxDotNet",
   "icons": [
     {
       "src": "favicon.ico",

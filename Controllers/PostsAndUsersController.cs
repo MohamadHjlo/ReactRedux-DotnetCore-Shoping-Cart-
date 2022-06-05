@@ -1,18 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SpaReactDotNet.Data;
-using SpaReactDotNet.Models;
-using SpaReactDotNet.Models.ViewModels;
+using SpaReduxDotNet.Data;
+using SpaReduxDotNet.Models;
+using SpaReduxDotNet.Models.ViewModels;
 
-namespace SpaReactDotNet.Controllers
+namespace SpaReduxDotNet.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
     public class PostsAndUsersController : ControllerBase
     {
-        private readonly SpaReactDotNetContext _context;
+        private readonly SpaReduxDotNetContext _context;
 
-        public PostsAndUsersController(SpaReactDotNetContext context)
+        public PostsAndUsersController(SpaReduxDotNetContext context)
         {
             _context = context;
         }

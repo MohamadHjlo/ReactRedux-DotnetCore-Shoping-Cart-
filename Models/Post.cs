@@ -1,6 +1,6 @@
 ﻿#nullable disable
 
-namespace SpaReactDotNet.Models
+namespace SpaReduxDotNet.Models
 {
     public class Post
     {

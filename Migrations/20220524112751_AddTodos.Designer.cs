@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SpaReactDotNet.Data;
+using SpaReduxDotNet.Data;
 
 #nullable disable
 
-namespace SpaReactDotNet.Migrations
+namespace SpaReduxDotNet.Migrations
 {
-    [DbContext(typeof(SpaReactDotNetContext))]
+    [DbContext(typeof(SpaReduxDotNetContext))]
     [Migration("20220524112751_AddTodos")]
     partial class AddTodos
     {
@@ -23,7 +23,7 @@ namespace SpaReactDotNet.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("SpaReactDotNet.Models.Post", b =>
+            modelBuilder.Entity("SpaReduxDotNet.Models.Post", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -42,7 +42,7 @@ namespace SpaReactDotNet.Migrations
                     b.ToTable("Posts");
                 });
 
-            modelBuilder.Entity("SpaReactDotNet.Models.Todo", b =>
+            modelBuilder.Entity("SpaReduxDotNet.Models.Todo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -65,7 +65,7 @@ namespace SpaReactDotNet.Migrations
                     b.ToTable("Todos");
                 });
 
-            modelBuilder.Entity("SpaReactDotNet.Models.User", b =>
+            modelBuilder.Entity("SpaReduxDotNet.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

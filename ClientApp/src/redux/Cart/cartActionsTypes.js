@@ -1,0 +1,9 @@
+export const GET_CART = "GET_CART";
+export const REMOVE_CART_ITEM = "REMOVE_CART_ITEM";
+export const ADD_TO_CART = "ADD_TO_CART";
+export const SET_LOADING = "SET_LOADING";
+export const SET_ERROR = "SET_ERROR";
+export const SET_Remove_Loading = "SET_Remove_Loading";
+export const SET_QUANTITY = "SET_QUANTITY";
+export const INCDEC_QUANTITY = "INCDEC_QUANTITY";
+export const CLEARCART = "CLEARCART";

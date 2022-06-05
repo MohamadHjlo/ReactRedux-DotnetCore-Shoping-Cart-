@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SpaReactDotNet.Models;
+using SpaReduxDotNet.Models;
 
-namespace SpaReactDotNet.Data
+namespace SpaReduxDotNet.Data
 {
-    public class SpaReactDotNetContext : DbContext
+    public class SpaReduxDotNetContext : DbContext
     {
-        public SpaReactDotNetContext(DbContextOptions<SpaReactDotNetContext> options) : base(options)
+        public SpaReduxDotNetContext(DbContextOptions<SpaReduxDotNetContext> options) : base(options)
         {
 
         }
@@ -14,6 +14,11 @@ namespace SpaReactDotNet.Data
         public DbSet<Post> Posts { get; set; }
 
         public DbSet<Todo> Todos { get; set; }
+
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<Product> Products { get; set; }
+
+        public DbSet<ProductToCart> ProductToCarts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

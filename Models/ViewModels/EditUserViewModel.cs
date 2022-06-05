@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SpaReactDotNet.Models.ViewModels
+namespace SpaReduxDotNet.Models.ViewModels
 {
     public class EditUserViewModel
     {

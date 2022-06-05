@@ -4,22 +4,23 @@
 
 namespace SpaReduxDotNet.Migrations
 {
-    public partial class adddescribtionuser : Migration
+    public partial class dsahdsajdksah : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "Describtion",
-                table: "Users",
+                name: "Image",
+                table: "Products",
                 type: "nvarchar(max)",
-                nullable: true);
+                nullable: false,
+                defaultValue: "");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "Describtion",
-                table: "Users");
+                name: "Image",
+                table: "Products");
         }
     }
 }

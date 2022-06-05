@@ -2,19 +2,22 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using SpaReactDotNet;
-using SpaReactDotNet.Data;
+using SpaReduxDotNet;
+using SpaReduxDotNet.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<SpaReactDotNetContext>(option =>
+builder.Services.AddDbContext<SpaReduxDotNetContext>(option =>
 {
     option.UseSqlServer(@"Data Source=MOHAMAD;Initial Catalog=ReactDotNetSpa_DB;Integrated Security=true;MultipleActiveResultSets=true");
 });
 builder.Services.AddControllersWithViews().AddFluentValidation(
                 fv => fv.RegisterValidatorsFromAssemblyContaining<ModelValidator>()
-            ); 
+            ).AddNewtonsoftJson(options =>
+{
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+}).AddRazorRuntimeCompilation();
 
 var app = builder.Build();
 

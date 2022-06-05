@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace SpaReactDotNet.Migrations
+namespace SpaReduxDotNet.Migrations
 {
     public partial class ds : Migration
     {
